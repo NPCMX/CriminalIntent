@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--这里是RecycleView中每一个清单子项的Fragment布局文件，是ViewHolder需要加载的布局-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CrimeListActivity"
+    >
+
+    <CheckBox
+        android:id="@+id/list_item_crime_solve_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/list_item_crime_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/list_item_crime_solve_check_box"
+        android:textStyle="bold"
+        android:padding="4dp"
+        android:text="Crime Date"/>
+
+    <TextView
+        android:id="@+id/list_item_crime_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/list_item_crime_solve_check_box"
+        android:layout_below="@id/list_item_crime_title_text_view"
+        android:padding="4dp"
+        android:text="Crime Date"/>
+
+</RelativeLayout>

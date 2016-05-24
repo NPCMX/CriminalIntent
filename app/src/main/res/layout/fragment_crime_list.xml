@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这里是RecycleView的主布局文件，将显示一个承载多个crime的清单-->
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/crime_recycle_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>

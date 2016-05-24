@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这里是一个Fragment容器，用于动态加载每一个crime的Fragment布局-->
+<!--直接隶属于SingleFragmentActivity，所以也属于所有继承了SingleFragmentActivity的Activity-->
+<!--成为“需要加载Fragment”的所有Activity的“公共模版布局文件”-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.npc.cmx.criminalintent.CrimeActivity">
+
+</FrameLayout>
