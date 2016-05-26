@@ -4,10 +4,9 @@
 <!--成为“需要加载Fragment”的所有Activity的“公共模版布局文件”-->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.npc.cmx.criminalintent.CrimeActivity">
+    >
 
 </FrameLayout>

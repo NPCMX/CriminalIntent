@@ -2,8 +2,10 @@ package com.npc.cmx.criminalintent;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+//import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 
 /**
  * Created by CMX on 2016/5/24.
@@ -16,12 +18,20 @@ import android.support.v4.app.FragmentManager;
  * */
 
 /**
+ * 新版本的Activity自动包含控制fragment的功能
  * 为了在早期的版本中支持activity控制fragment，需要继承FragmentActivity
  * 使用前需要设置项目的支持库包括com.android.support:support-v4
  * 通过File-Project Structure-dependencies来添加依赖库会免去忘记Gradle同步带来的风险
  * */
 
-public abstract class SingleFragmentActivity extends FragmentActivity{
+/**
+ * 由于需要使用ToolBar，所以父类改为AppCompatActivity，其为FragmentActivtiy的子类
+ * 所以不用做其他改变
+ * */
+
+public abstract class SingleFragmentActivity extends AppCompatActivity{
+
+    private Menu mMenu;
 
     //继承这个类的活动，通过重写这个方法来创建自己要加载的Fragment
     protected abstract Fragment createFragment();

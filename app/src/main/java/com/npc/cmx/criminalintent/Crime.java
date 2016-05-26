@@ -6,11 +6,16 @@ import java.util.UUID;
 /**
  * Created by CMX on 2016/5/23.
  */
+
+/**
+ *crime模型属性类
+ * */
+
 public class Crime {
-    private UUID mId;
+    private UUID mId;//生成一个号称全球唯一的ID
     private String mTitle;
     private Date mDate;
-    private boolean mSolved;
+    private boolean mSolved;//记录crime处理状态
 
     public Crime(){
 //        唯一识别码 (Universally Unique Identifier)
@@ -45,6 +50,4 @@ public class Crime {
     public void setSolved(boolean solved) {
         mSolved = solved;
     }
-
-
 }

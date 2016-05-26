@@ -14,10 +14,7 @@ import android.support.v4.app.Fragment;
 
 public class CrimeListActivity extends SingleFragmentActivity {
 
-    /**If you have other methods in your CrimeListActivity,
-     *  such as onCreate, remove them.
-     *  Let SingleFragmentActivity do its job,
-     *  to keep CrimeListActivity simple.*/
+    //这里指定CrimeListActivity管理的Fragment是CrimeListFragment()
     @Override
     protected Fragment createFragment() {
         return new CrimeListFragment();
